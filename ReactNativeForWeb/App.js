@@ -50,7 +50,7 @@ export default class App extends Component {
   }
 
   renderMenu() {
-    const menuItems = ['First', 'Second', 'Third', 'Fourth', 'Fifth'];    
+    const menuItems = ['Weblap', 'Second', 'Third', 'Fourth', 'Fifth'];    
     const isMenuHorizontal = Platform.OS !== 'web';
 
     return (
@@ -62,7 +62,6 @@ export default class App extends Component {
 
   renderMenuItem(text, index) {
     const rowStyle = this.state.activeMenuIndex === index ? styles.activeMenuRow : styles.menuRow;
-    const menuText = `${text} content`;
 
     return ( 
       <Text
@@ -70,7 +69,7 @@ export default class App extends Component {
         style={rowStyle}
         onPress={() => this.onMenuItemPress(index)}
       >
-        { menuText }
+        { text }
       </Text>
     );
   }
@@ -113,7 +112,8 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   page: {
-    flex: 1,
+    height: '100%',
+    width: '100%',
   },
   container: {
     ...Platform.select({

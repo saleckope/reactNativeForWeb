@@ -50,7 +50,7 @@ export default class App extends Component {
   }
 
   renderMenu() {
-    const menuItems = ['Weblap', 'Second', 'Third', 'Fourth', 'Fifth'];    
+    const menuItems = ['Weblap', 'Kliens-szerver architektúra', 'Third', 'Fourth', 'Fifth'];    
     const isMenuHorizontal = Platform.OS !== 'web';
 
     return (

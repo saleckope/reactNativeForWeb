@@ -47,7 +47,7 @@ export class SecondComponent extends Component {
     return (
       <ScrollView style={styles.container}>
         <Text style={styles.title}>
-          Kliens-szerver architektúra
+          Kliens és szerver
         </Text>
         <Text style={styles.subtitle}>Kliens</Text>
         <Text style={styles.welcome}>

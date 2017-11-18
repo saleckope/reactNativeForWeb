@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignSelf: 'center',
     marginHorizontal: 30,
-    margin: 30,
+    marginTop: 30,
   },
   diagram: {
     height: 200,

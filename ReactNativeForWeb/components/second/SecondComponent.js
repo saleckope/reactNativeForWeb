@@ -11,14 +11,14 @@ export class SecondComponent extends Component {
   renderClientServerList(content) {
     return (
       <View style={styles.list}>
-        { content.map(text => this.renderListRow(text)) }
+        { content.map((text, index) => this.renderListRow(text, index)) }
       </View>
     );
   }
 
-  renderListRow(text) {
+  renderListRow(text, index) {
     return (
-      <View style={styles.listRoW}>
+      <View key={index} style={styles.listRoW}>
         <View style={styles.listButton} /><Text>{ text }</Text>
       </View>
     );

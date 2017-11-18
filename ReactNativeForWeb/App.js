@@ -135,8 +135,20 @@ const styles = StyleSheet.create({
     width: 30,
   },
   headerText: {
-    fontSize: 20,
-    marginLeft: 20,
+    ...Platform.select({
+      web: {
+        fontSize: 20,
+        marginLeft: 20,        
+      },
+      ios: {
+        fontSize: 15,
+        marginLeft: 10,        
+      },
+      android: {
+        fontSize: 15,
+        marginLeft: 10,        
+      }
+    }),
     color: 'white',
   },
   menu: {

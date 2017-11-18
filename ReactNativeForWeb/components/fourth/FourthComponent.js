@@ -27,7 +27,7 @@ export class FourthComponent extends Component {
       console.log(this.state.data);
       this.scroll.scrollToEnd({ animated: true });
       this.labelScroll.scrollToEnd({ animated: true });
-    }, 1500);
+    }, 500);
   }
 
   componentWillUnmount() {
@@ -61,6 +61,7 @@ export class FourthComponent extends Component {
       <View style={styles.labelRow}>
         <ScrollView
           ref={scroll => this.labelScroll = scroll}
+          scrollEnabled={false}
           horizontal={true}
         >
           { labels }
@@ -84,6 +85,7 @@ export class FourthComponent extends Component {
               this.scroll= scroll;
             }}
             horizontal={true}
+            scrollEnabled={false}
           >
             { this.renderDiagram() }
           </ScrollView>

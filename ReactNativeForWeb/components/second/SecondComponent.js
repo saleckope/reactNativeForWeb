@@ -45,7 +45,7 @@ export class SecondComponent extends Component {
     const imageURL = 'http://cms.sulinet.hu/get/d/444ac096-56a6-4cee-882c-816eec227f69/1/5/b/Large/R-1-3737kep-nagy.jpg';
 
     return (
-      <ScrollView style={styles.container}>
+      <ScrollView style={styles.container} contentContainerStyle={styles.scrollContent}>
         <Text style={styles.title}>
           Kliens és szerver
         </Text>
@@ -78,6 +78,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     height: '100%',
+  },
+  scrollContent: {
     padding: 20,
   },
   title: {

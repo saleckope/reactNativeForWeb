@@ -74,7 +74,7 @@ export class FourthComponent extends Component {
     const imageURL = 'http://techblog.constantcontact.com/wp-content/uploads/2014/11/TechTalk_BAnderson_11052014_Image7.png';
 
     return (
-      <ScrollView style={styles.container}>
+      <ScrollView style={styles.container} contentContainerStyle={styles.scrollContent}>
         <Text style={styles.title}>
           Hierarchical render function
         </Text>
@@ -113,6 +113,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     height: '100%',
+  },
+  scrollContent: {
     padding: 20,
   },
   title: {

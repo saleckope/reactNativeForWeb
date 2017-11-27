@@ -50,7 +50,7 @@ export default class App extends Component {
   }
 
   renderMenu() {
-    const menuItems = ['Weblap', 'Kliens és szerver', 'Redux', 'Fourth', 'Fifth'];    
+    const menuItems = ['Weblap', 'Kliens és szerver', 'Redux', 'Hierarchical render function', 'HTML'];    
     const isMenuHorizontal = Platform.OS !== 'web';
 
     return (

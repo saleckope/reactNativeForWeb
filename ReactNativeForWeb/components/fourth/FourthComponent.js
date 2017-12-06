@@ -16,6 +16,7 @@ export class FourthComponent extends Component {
     };
     this.interval = null;
   }
+  
   componentDidMount() {
     this.interval = setInterval(() => {
       const rand = Math.floor(Math.random() * 10) + 1;
